@@ -1,0 +1,62 @@
+# ================= C++ =================
+# Binários
+/bin/
+/bin_debug/
+/build/
+/src/bin/
+/*.exe
+/*.out
+/*.obj
+/*.o
+/*.a
+/*.so
+/*.dylib
+
+# Arquivos de depuração
+*.dSYM/
+*.stackdump
+*.log
+*.gcda
+*.gcno
+*.gcov
+
+# CMake / Make
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ================= Python =================
+# Bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Logs
+*.log
+
+# Data / outputs
+csv/
+input/
+relatorio/
+
+# ================= IDEs / Editors =================
+# VSCode
+.vscode/
+
+# CLion / JetBrains
+.idea/
+*.iml
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
