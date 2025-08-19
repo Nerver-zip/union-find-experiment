@@ -32,9 +32,9 @@ Isso permite **reproduzir todos os experimentos** e **validar as análises** de 
 ## Como Rodar
 
 ### 1. Instalar dependências
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 2. Compilar os programas
 ```bash
@@ -46,7 +46,7 @@ make
 make run
 ```
 
-Os resultados serão salvos na pasta `csv/`.
+Os resultados brutos serão salvos na pasta `csv/`.
 
 ### 4. Limpar artefatos
 ```bash
@@ -58,6 +58,6 @@ make clean
 ## Relatório
 
 A análise detalhada dos resultados está disponível em:  
-[\`relatorio/\`](./relatorio)
+[`relatorio`](./relatorio)
 
 ---
