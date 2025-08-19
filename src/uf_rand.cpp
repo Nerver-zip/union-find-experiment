@@ -15,10 +15,9 @@ private:
     vector<int> parent;
     mt19937 gen;
     uniform_int_distribution<int> dis;
-
 public:
-    UnionFindRand(int n) : parent(n), gen(random_device{}()), dis(0,1) {
-        for(int i=0;i<n;++i) 
+    UnionFindRand(int n) : parent(n), gen(random_device{}()), dis(0, 1) {
+        for(int i = 0;i < n; ++i) 
             parent[i] = i;
     }
 
@@ -30,11 +29,11 @@ public:
         return x;
     }
 
-    void unite(int x,int y) {
-        int rx=find(x), ry=find(y);
-        if(rx==ry) return;
-        if(dis(gen)==0) parent[rx]=ry;
-        else parent[ry]=rx;
+    void unite(int x, int y) {
+        int rx = find(x), ry = find(y);
+        if(rx == ry) return;
+        if(dis(gen) == 0) parent[rx] = ry;
+        else parent[ry] = rx;
     }
 };
 

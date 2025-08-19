@@ -1,0 +1,54 @@
+=== Teste de Hipótese: UF-Rank vs UF-Rand ===
+
+--- Workload: union_heavy ---
+Tamanho: 1000
+UF-Rank normalidade p=0.0002: Não
+UF-Rand normalidade p=0.0238: Não
+Teste aplicado: Mann-Whitney U test
+p-valor: 2.14e-11 -> Significativa
+
+Tamanho: 10000
+UF-Rank normalidade p=0.0000: Não
+UF-Rand normalidade p=0.0000: Não
+Teste aplicado: Mann-Whitney U test
+p-valor: 1.32e-10 -> Significativa
+
+Tamanho: 100000
+UF-Rank normalidade p=0.0053: Não
+UF-Rand normalidade p=0.7523: Sim
+Teste aplicado: Mann-Whitney U test
+p-valor: 3.02e-11 -> Significativa
+
+Tamanho: 1000000
+UF-Rank normalidade p=0.0122: Não
+UF-Rand normalidade p=0.0772: Sim
+Teste aplicado: Mann-Whitney U test
+p-valor: 3.02e-11 -> Significativa
+
+--- Workload: find_heavy ---
+Tamanho: 1000
+UF-Rank normalidade p=0.0007: Não
+UF-Rand normalidade p=0.3011: Sim
+Teste aplicado: Mann-Whitney U test
+p-valor: 2.74e-11 -> Significativa
+
+Tamanho: 10000
+UF-Rank normalidade p=0.0000: Não
+UF-Rand normalidade p=0.0000: Não
+Teste aplicado: Mann-Whitney U test
+p-valor: 3.00e-11 -> Significativa
+
+Tamanho: 100000
+UF-Rank normalidade p=0.9793: Sim
+UF-Rand normalidade p=0.0097: Não
+Teste aplicado: Mann-Whitney U test
+p-valor: 3.01e-11 -> Significativa
+
+Tamanho: 1000000
+UF-Rank normalidade p=0.3170: Sim
+UF-Rand normalidade p=0.0890: Sim
+Teste aplicado: t-test de duas amostras
+Diferença média: -81879.10
+Intervalo de confiança 95%: [-83100.75, -80657.45]
+p-valor: 0.0000 -> Significativa
+

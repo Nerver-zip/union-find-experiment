@@ -24,8 +24,6 @@
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
-Makefile
-
 # ================= Python =================
 # Bytecode
 __pycache__/
@@ -43,9 +41,7 @@ env/
 *.log
 
 # Data / outputs
-csv/
 input/
-relatorio/
 
 # ================= IDEs / Editors =================
 # VSCode
